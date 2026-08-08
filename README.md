@@ -221,6 +221,10 @@ Current Jenkins Features:
 
 ---
 
+## CI/CD Integration
+
+This project is integrated with Jenkins for automated test execution.
+
 # 👨‍💻 Author
 
 **Gaurav Udhwani**
