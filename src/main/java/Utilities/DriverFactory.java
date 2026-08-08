@@ -33,14 +33,7 @@ public class DriverFactory {
                 break;
 
             case "edge":
-            	EdgeOptions edgeOptions = new EdgeOptions();
-
-                edgeOptions.addArguments("--headless=new");
-                edgeOptions.addArguments("--disable-notifications");
-                edgeOptions.addArguments("--disable-popup-blocking");
-                edgeOptions.addArguments("--window-size=1920,1080");
-
-                driver.set(new EdgeDriver(edgeOptions));
+				driver.set(new EdgeDriver());
                 break;
 
             case "firefox":
