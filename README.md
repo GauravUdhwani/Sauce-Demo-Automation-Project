@@ -8,7 +8,7 @@ The project is also integrated with **GitHub and Jenkins** to enable automated C
 
 ---
 
-# 📌 Project Overview
+## 📌 Project Overview
 
 This project automates the end-to-end user journey of the Sauce Demo application, including:
 
@@ -25,13 +25,11 @@ It follows the **Page Object Model (POM)** design pattern and uses a centralized
 
 The framework currently contains **27 automated test cases**, with the latest Jenkins execution achieving:
 
-**27 Tests Passed | 0 Failed | 0 Skipped**
+> **27 Tests Passed | 0 Failed | 0 Skipped**
 
 ---
 
-# 🎯 Project Objectives
-
-The main objectives of this project are:
+## 🎯 Project Objectives
 
 - Build a maintainable Selenium automation framework
 - Implement the Page Object Model design pattern
@@ -46,7 +44,7 @@ The main objectives of this project are:
 
 ---
 
-# 🛠️ Tech Stack
+## 🛠️ Tech Stack
 
 | Technology | Purpose |
 |---|---|
@@ -67,7 +65,7 @@ The main objectives of this project are:
 
 ---
 
-# 🏗️ Framework Architecture
+## 🏗️ Framework Architecture
 
 The framework follows a layered and reusable architecture.
 
@@ -88,27 +86,27 @@ Page Objects
      │
      ▼
 Sauce Demo Application
+```
 
-Supporting components include:
+### Supporting Components
 
-
-
+```text
 Utilities
-   ├── Driver Factory
-   ├── Config Reader
-   ├── Wait Utility
-   ├── Screenshot Utility
-   └── Other reusable utilities
+├── Driver Factory
+├── Config Reader
+├── Wait Utility
+├── Screenshot Utility
+└── Other reusable utilities
 
 Listeners
-   ├── TestNG Listeners
-   ├── Extent Reporting
-   └── Test Execution Events
+├── TestNG Listeners
+├── Extent Reporting
+└── Test Execution Events
+```
 
-📂 Project Structure
+### Project Structure
 
-
-
+```text
 Sauce-Demo-Automation-Project
 │
 ├── src
@@ -131,197 +129,166 @@ Sauce-Demo-Automation-Project
 ├── testng.xml
 ├── README.md
 └── .gitignore
+```
 
-✨ Framework Features
+---
 
-Page Object Model (POM) Design Pattern
+## ✨ Framework Features
 
-Cross-Browser Support
+- Page Object Model (POM) Design Pattern
+- Cross-Browser Support
+- Maven Build Management
+- TestNG Test Execution
+- Log4j2 Logging
+- Extent HTML Reporting
+- Screenshot Capture
+- Explicit Wait Utilities
+- Reusable Utility Classes
+- Configuration Management
+- ThreadLocal WebDriver Management
+- TestNG Listeners
+- Retry Analyzer
+- Git/GitHub Integration
+- Jenkins CI Integration
+- Jenkins Poll SCM
+- Automated Build Execution
+- Jenkins Test Result Reporting
+- HTML Report Archiving
 
-Maven Build Management
+---
 
-TestNG Test Execution
+## 🧪 Test Automation Coverage
 
-Log4j2 Logging
+The framework currently contains **27 automated test cases** covering the major workflows of the Sauce Demo application.
 
-Extent HTML Reporting
+### 🔐 Login Module
 
-Screenshot Capture
+- Verify Login functionality
 
-Explicit Wait Utilities
+### 📦 Inventory Module
 
-Reusable Utility Classes
+- Verify Inventory Page
+- Verify Product Names
+- Verify Product Price
+- Verify Product Title
+- Verify Web Page
+- Add Product to Cart
+- Verify Back Button Functionality
 
-Configuration Management
+### 🛒 Cart Module
 
-ThreadLocal WebDriver Management
+- Verify Cart Page
+- Verify Cart Title
+- Add Product to Cart
+- Remove Product from Cart
+- Continue Shopping
+- Click Shopping Cart
 
-TestNG Listeners
+### 💳 Checkout Module
 
-Retry Analyzer
+- Verify Checkout Page
+- Verify Checkout Title
+- Add Customer Details
+- Continue Checkout
+- Cancel Checkout
+- Finish Order
 
-Git/GitHub Integration
+### ✅ Order Confirmation Module
 
-Jenkins CI Integration
+- Verify Order Confirmation Page
+- Verify Confirmation Message
+- Verify Confirmation Description
+- Verify Header Title
 
-Jenkins Poll SCM
+---
 
-Automated Build Execution
-
-Jenkins Test Result Reporting
-
-HTML Report Archiving
-
-🧪 Test Automation Coverage
-
-The framework currently contains 27 automated test cases covering the major workflows of the Sauce Demo application.
-
-🔐 Login Module
-
-Verify Login functionality
-
-📦 Inventory Module
-
-Verify Inventory Page
-
-Verify Product Names
-
-Verify Product Price
-
-Verify Product Title
-
-Verify Web Page
-
-Add Product to Cart
-
-Verify Back Button Functionality
-
-🛒 Cart Module
-
-Verify Cart Page
-
-Verify Cart Title
-
-Add Product to Cart
-
-Remove Product from Cart
-
-Continue Shopping
-
-Click Shopping Cart
-
-💳 Checkout Module
-
-Verify Checkout Page
-
-Verify Checkout Title
-
-Add Customer Details
-
-Continue Checkout
-
-Cancel Checkout
-
-Finish Order
-
-✅ Order Confirmation Module
-
-Verify Order Confirmation Page
-
-Verify Confirmation Message
-
-Verify Confirmation Description
-
-Verify Header Title
-
-⚙️ Prerequisites
+## ⚙️ Prerequisites
 
 Make sure the following are installed before running the project:
 
-Java JDK
+- Java JDK
+- Maven
+- Git
+- Chrome Browser
+- Eclipse IDE
 
-Maven
+---
 
-Git
-
-Chrome Browser
-
-Eclipse IDE
-
-📥 Clone the Repository
+## 📥 Clone the Repository
 
 Clone the project using:
 
-
-
+```bash
 git clone https://github.com/GauravUdhwani/Sauce-Demo-Automation-Project.git
+```
 
-📁 Navigate to the Project
+---
 
+## 📁 Navigate to the Project
 
-
+```bash
 cd Sauce-Demo-Automation-Project
+```
 
-▶️ Execute the Tests Using Maven
+---
+
+## ▶️ Execute the Tests Using Maven
 
 Run the complete TestNG suite using:
 
-
-
+```bash
 mvn clean test
+```
 
 Maven will:
 
-Clean the previous build
+1. Clean the previous build
+2. Compile the project
+3. Execute the TestNG test suite
+4. Generate test results
+5. Generate the Extent HTML report
 
-Compile the project
+---
 
-Execute the TestNG test suite
-
-Generate test results
-
-Generate the Extent HTML report
-
-🧪 Execute Using TestNG
+## 🧪 Execute Using TestNG
 
 The TestNG suite is configured in:
 
-
-
+```text
 testng.xml
+```
 
-The suite can be executed directly from Eclipse as:
+The suite can be executed directly from Eclipse:
 
-
-
+```text
 Run As → TestNG Suite
+```
 
-🌐 Browser Configuration
+---
+
+## 🌐 Browser Configuration
 
 The framework supports multiple browsers through the centralized DriverFactory.
 
-Supported browsers:
+### Supported Browsers
 
-
-
-Chrome
-Edge
-Firefox
+- Chrome
+- Edge
+- Firefox
 
 The browser is passed through a TestNG parameter.
 
-Example:
+### TestNG Parameter
 
-
-
+```xml
 <parameter name="browser" value="chrome"/>
+```
 
-The BaseTest class receives the browser parameter and initializes the required WebDriver through the DriverFactory.
+The `BaseTest` class receives the browser parameter and initializes the required WebDriver through the DriverFactory.
 
-Example:
+### BaseTest Example
 
-
-
+```java
 @BeforeMethod
 @Parameters("browser")
 public void setup(@Optional("chrome") String browser) {
@@ -332,191 +299,159 @@ public void setup(@Optional("chrome") String browser) {
 
     // Test setup
 }
+```
 
-Jenkins Browser
+### Jenkins Browser
 
 Chrome is currently configured as the primary browser for Jenkins CI execution.
 
 The framework also contains Edge and Firefox support for cross-browser execution.
 
-🔧 Driver Factory
+---
 
-The framework uses a centralized DriverFactory to initialize and manage WebDriver instances.
+## 🔧 Driver Factory
+
+The framework uses a centralized `DriverFactory` to initialize and manage WebDriver instances.
 
 The DriverFactory provides:
 
-Centralized driver initialization
+- Centralized driver initialization
+- Browser selection
+- ThreadLocal WebDriver management
+- Driver cleanup
 
-Browser selection
+### Example
 
-ThreadLocal WebDriver management
-
-Driver cleanup
-
-Example:
-
-
-
+```java
 DriverFactory.getDriver(browser);
+```
 
 The framework uses:
 
-
-
+```java
 ThreadLocal<WebDriver>
+```
 
 to maintain WebDriver instances independently.
 
-🧩 Page Object Model
+---
+
+## 🧩 Page Object Model
 
 The framework follows the Page Object Model (POM) design pattern.
 
 Each application page has a dedicated Page Object containing:
 
-Web elements
-
-Locators
-
-Page-specific actions
-
-Reusable methods
+- Web elements
+- Locators
+- Page-specific actions
+- Reusable methods
 
 This helps improve:
 
-Code reusability
+- Code reusability
+- Maintainability
+- Readability
+- Separation of test logic and page logic
 
-Maintainability
+---
 
-Readability
-
-Separation of test logic and page logic
-
-📝 Configuration Management
+## 📝 Configuration Management
 
 The framework uses a configuration reader to manage configurable values such as:
 
-Application URL
-
-Implicit wait configuration
-
-Other framework properties
+- Application URL
+- Implicit wait configuration
+- Other framework properties
 
 This allows configuration values to be maintained separately from the test code.
 
-⏱️ Wait Management
+---
+
+## ⏱️ Wait Management
 
 The framework uses reusable wait functionality to improve test stability and synchronization between Selenium and the application.
 
 This helps reduce issues caused by:
 
-Dynamic page loading
+- Dynamic page loading
+- Delayed elements
+- Page transitions
+- Asynchronous UI behavior
 
-Delayed elements
+---
 
-Page transitions
-
-Asynchronous UI behavior
-
-📊 Test Execution Results
+## 📊 Test Execution Results
 
 The latest successful Jenkins execution produced:
 
-
-
+```text
 Tests run: 27
 Failures: 0
 Errors: 0
 Skipped: 0
 
 BUILD SUCCESS
+```
 
-Execution Summary
+### Execution Summary
 
-MetricResult
+| Metric | Result |
+|---|---:|
+| Tests Executed | 27 |
+| Tests Passed | 27 |
+| Tests Failed | 0 |
+| Tests Skipped | 0 |
+| Errors | 0 |
+| Pass Rate | 100% |
+| Build Status | ✅ SUCCESS |
 
+---
 
-
-Tests Executed
-
-27
-
-Tests Passed
-
-27
-
-Tests Failed
-
-0
-
-Tests Skipped
-
-0
-
-Errors
-
-0
-
-Pass Rate
-
-100%
-
-Build Status
-
-✅ SUCCESS
-
-📈 Extent HTML Report
+## 📈 Extent HTML Report
 
 The framework generates an Extent HTML Report after test execution.
 
 The report provides detailed information including:
 
-Test case names
-
-Test execution status
-
-Execution timestamps
-
-Test duration
-
-Environment information
-
-Passed/Failed test summary
-
-Test execution timeline
+- Test case names
+- Test execution status
+- Execution timestamps
+- Test duration
+- Environment information
+- Passed/Failed test summary
+- Test execution timeline
 
 The generated report is located at:
 
-
-
+```text
 test-output/ExtentReport.html
+```
 
 The report is also archived by Jenkins after the build.
 
-📋 Jenkins Test Results
+---
+
+## 📋 Jenkins Test Results
 
 Jenkins records the automated test execution results and provides visibility into:
 
-Total tests
-
-Passed tests
-
-Failed tests
-
-Skipped tests
-
-Test execution duration
-
-Test class-level results
+- Total tests
+- Passed tests
+- Failed tests
+- Skipped tests
+- Test execution duration
+- Test class-level results
 
 The latest Jenkins execution successfully recorded:
 
+> **27 Tests Passed**  
+> **0 Tests Failed**  
+> **0 Tests Skipped**
 
+---
 
-27 Tests Passed
-0 Tests Failed
-0 Tests Skipped
-
-🔄 Jenkins CI/CD Integration
+## 🔄 Jenkins CI/CD Integration
 
 The project is integrated with Jenkins for Continuous Integration.
 
@@ -524,12 +459,9 @@ The Jenkins job is connected to the GitHub repository and uses Poll SCM to perio
 
 When Jenkins detects a new SCM change, it automatically triggers the automation build.
 
-🔁 CI/CD Workflow
+### 🔁 CI/CD Workflow
 
-The complete CI workflow is:
-
-
-
+```text
 Developer
     │
     ▼
@@ -573,39 +505,43 @@ Results           Report
     └────────┬────────┘
              ▼
         BUILD SUCCESS
+```
 
-⚙️ Jenkins Build Configuration
+---
+
+## ⚙️ Jenkins Build Configuration
 
 Jenkins executes the automation suite using Maven:
 
-
-
+```bash
 mvn clean test
+```
 
 The build is automatically triggered when Jenkins detects a change in the GitHub repository.
 
 The Jenkins console confirms the SCM-triggered execution with:
 
-
-
+```text
 Started by an SCM change
+```
 
-🔄 GitHub → Jenkins Integration
+---
+
+## 🔄 GitHub → Jenkins Integration
 
 The source code is maintained in GitHub.
 
-Typical development workflow:
+### Typical Development Workflow
 
-
-
+```bash
 git add .
 git commit -m "Update automation framework"
 git push origin main
+```
 
 After pushing the changes:
 
-
-
+```text
 GitHub
    ↓
 Jenkins Poll SCM
@@ -615,15 +551,17 @@ SCM Change Detected
 Automatic Build
    ↓
 Maven Test Execution
+```
 
 This enables continuous integration of the automation suite.
 
-📊 Reporting Workflow
+---
+
+## 📊 Reporting Workflow
 
 The reporting flow is:
 
-
-
+```text
 TestNG
    ↓
 Test Execution
@@ -631,246 +569,172 @@ Test Execution
 Jenkins Test Results
    ↓
 Extent HTML Report
+```
 
 This provides both Jenkins-level execution visibility and a detailed HTML report.
 
-🧰 Framework Components
+---
 
-The framework contains reusable components including:
+## 🧰 Framework Components
 
-Base Test
+### Base Test
 
 Responsible for common test setup and teardown activities.
 
-Driver Factory
+### Driver Factory
 
 Responsible for WebDriver initialization and browser management.
 
-Config Reader
+### Config Reader
 
 Reads framework configuration values.
 
-Wait Utility
+### Wait Utility
 
 Provides reusable synchronization and wait functionality.
 
-Screenshot Utility
+### Screenshot Utility
 
 Provides screenshot capture functionality where required.
 
-Retry Analyzer
+### Retry Analyzer
 
 Provides retry functionality for configured failed tests.
 
-Extent Manager
+### Extent Manager
 
 Handles Extent Report configuration and report generation.
 
-Log4j2 Logger
+### Log4j2 Logger
 
 Provides execution logging for the automation framework.
 
-TestNG Listeners
+### TestNG Listeners
 
 Handles TestNG execution events and reporting integration.
 
-🧹 Test Cleanup
+---
+
+## 🧹 Test Cleanup
 
 The framework performs WebDriver cleanup after test execution.
 
-The DriverFactory provides a quitDriver() method to:
+The DriverFactory provides a `quitDriver()` method to:
 
-Quit the browser
+- Quit the browser
+- Remove the ThreadLocal WebDriver instance
+- Prevent driver references from remaining after execution
 
-Remove the ThreadLocal WebDriver instance
+---
 
-Prevent driver references from remaining after execution
-
-🔀 Git Workflow
+## 🔀 Git Workflow
 
 The project uses Git for version control and GitHub for repository management.
 
-Typical workflow:
+### Typical Workflow
 
-
-
+```bash
 git add .
 git commit -m "Update automation tests"
 git push origin main
+```
 
 The GitHub repository acts as the source of truth for the automation framework.
 
-🎯 Key Project Highlights
+---
 
-✅ Selenium WebDriver Automation
+## 🎯 Key Project Highlights
 
-✅ Java-based Framework
+- ✅ Selenium WebDriver Automation
+- ✅ Java-based Framework
+- ✅ TestNG
+- ✅ Maven
+- ✅ Page Object Model
+- ✅ DriverFactory
+- ✅ ThreadLocal WebDriver
+- ✅ Configuration Management
+- ✅ Log4j2 Logging
+- ✅ TestNG Listeners
+- ✅ Retry Analyzer
+- ✅ Reusable Utilities
+- ✅ Cross-Browser Framework Support
+- ✅ Git/GitHub Integration
+- ✅ Jenkins CI
+- ✅ Jenkins Poll SCM
+- ✅ Automated Build Execution
+- ✅ Jenkins Test Results
+- ✅ Extent HTML Reporting
+- ✅ 27 Automated Tests
+- ✅ 27 Tests Passed
+- ✅ 0 Failures
+- ✅ 0 Errors
+- ✅ 0 Skipped
+- ✅ 100% Pass Rate
 
-✅ TestNG
+---
 
-✅ Maven
-
-✅ Page Object Model
-
-✅ DriverFactory
-
-✅ ThreadLocal WebDriver
-
-✅ Configuration Management
-
-✅ Log4j2 Logging
-
-✅ TestNG Listeners
-
-✅ Retry Analyzer
-
-✅ Reusable Utilities
-
-✅ Cross-Browser Framework Support
-
-✅ Git/GitHub Integration
-
-✅ Jenkins CI
-
-✅ Jenkins Poll SCM
-
-✅ Automated Build Execution
-
-✅ Jenkins Test Results
-
-✅ Extent HTML Reporting
-
-✅ 27 Automated Tests
-
-✅ 27 Tests Passed
-
-✅ 0 Failures
-
-✅ 0 Errors
-
-✅ 0 Skipped
-
-✅ 100% Pass Rate
-
-🚀 Future Enhancements
+## 🚀 Future Enhancements
 
 The framework can be further enhanced with:
 
-Docker Integration
+- Docker Integration
+- GitHub Actions CI/CD
+- BrowserStack Integration
+- Excel Data-Driven Testing
+- REST Assured API Automation
+- Allure Reporting
+- Parallel Test Execution
+- Selenium Grid
+- Email Notifications
+- Slack Notifications
+- Enhanced Test Data Management
 
-GitHub Actions CI/CD
+---
 
-BrowserStack Integration
+## 📌 Project Status
 
-Excel Data-Driven Testing
+| Component | Status |
+|---|---|
+| Selenium Automation | ✅ Completed |
+| Java Framework | ✅ Completed |
+| TestNG Integration | ✅ Completed |
+| Maven Integration | ✅ Completed |
+| Page Object Model | ✅ Implemented |
+| DriverFactory | ✅ Implemented |
+| GitHub Integration | ✅ Completed |
+| Jenkins Integration | ✅ Completed |
+| Poll SCM | ✅ Configured |
+| Automated CI Execution | ✅ Working |
+| Test Reporting | ✅ Implemented |
+| Extent HTML Report | ✅ Implemented |
+| Automated Test Cases | 27 |
+| Tests Passed | 27 |
+| Tests Failed | 0 |
+| Tests Skipped | 0 |
+| Latest Build | **BUILD SUCCESS** |
 
-REST Assured API Automation
+---
 
-Allure Reporting
+## 👨‍💻 Author
 
-Parallel Test Execution
+**Gaurav Udhwani**
 
-Selenium Grid
+**QA Automation Engineer**
 
-Email Notifications
-
-Slack Notifications
-
-Enhanced Test Data Management
-
-📌 Project Status
-
-ComponentStatus
-
-
-
-Selenium Automation
-
-✅ Completed
-
-Java Framework
-
-✅ Completed
-
-TestNG Integration
-
-✅ Completed
-
-Maven Integration
-
-✅ Completed
-
-Page Object Model
-
-✅ Implemented
-
-DriverFactory
-
-✅ Implemented
-
-GitHub Integration
-
-✅ Completed
-
-Jenkins Integration
-
-✅ Completed
-
-Poll SCM
-
-✅ Configured
-
-Automated CI Execution
-
-✅ Working
-
-Test Reporting
-
-✅ Implemented
-
-Extent HTML Report
-
-✅ Implemented
-
-Automated Test Cases
-
-27
-
-Tests Passed
-
-27
-
-Tests Failed
-
-0
-
-Tests Skipped
-
-0
-
-Latest Build
-
-BUILD SUCCESS
-
-👨‍💻 Author
-
-Gaurav Udhwani
-
-QA Automation Engineer
-
-GitHub
+### GitHub
 
 https://github.com/GauravUdhwani/Sauce-Demo-Automation-Project
 
-LinkedIn
+### LinkedIn
 
 https://www.linkedin.com/in/gaurav-udhwani-7083661a6/
 
-Email
+### Email
 
 gauravudhwani03@gmail.com
 
-⭐ Support
+---
+
+## ⭐ Support
 
 If you found this project useful, please consider giving the repository a ⭐ Star on GitHub.
-
